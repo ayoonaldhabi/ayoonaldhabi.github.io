@@ -38,6 +38,55 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
+
+         <script>
+// Disable right-click
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+// Disable text selection
+document.addEventListener("selectstart", e => e.preventDefault());
+
+// Disable copy, cut, paste
+document.addEventListener("copy", e => e.preventDefault());
+document.addEventListener("cut", e => e.preventDefault());
+document.addEventListener("paste", e => e.preventDefault());
+
+// Disable drag & drop (especially for images)
+document.addEventListener("dragstart", e => e.preventDefault());
+
+// Disable specific key combinations
+document.addEventListener("keydown", e => {
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+    // Ctrl+Shift+I / Ctrl+Shift+J (DevTools)
+    if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+        e.preventDefault();
+    }
+    // Ctrl+U (View Source)
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        e.preventDefault();
+    }
+    // Ctrl+S (Save Page)
+    if (e.ctrlKey && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+    }
+    // Ctrl+C (Copy)
+    if (e.ctrlKey && e.key.toLowerCase() === "c") {
+        e.preventDefault();
+    }
+    // Ctrl+X (Cut)
+    if (e.ctrlKey && e.key.toLowerCase() === "x") {
+        e.preventDefault();
+    }
+    // Ctrl+A (Select All)
+    if (e.ctrlKey && e.key.toLowerCase() === "a") {
+        e.preventDefault();
+    }
+});
+</script>
+
     </head>
 
     <body>
@@ -243,7 +292,7 @@
                                                    
                                                 </li>
                                                 <li>
-                                                    <a href="about.html">About</a>
+                                                    <a href="">About</a>
                                                 </li>
                                                 <li>
                                                     <a href="service.html">Company Formation <i class="fas fa-angle-down"></i>
@@ -396,7 +445,7 @@ Ajman FZ<br>
                                                    
                                                 </li>
                                                 <li>
-                                                    <a href="contact.html">Contact</a>
+                                                    <a href="">Contact</a>
                                                 </li>
                                             </ul>
                                         </nav>
@@ -416,7 +465,7 @@ Ajman FZ<br>
                                     </div>
                                 </div>
                                 <div class="header-button">
-                                    <a href="contact.html" class="link-btn">
+                                    <a href="" class="link-btn">
                                         <span>Contact US</span>
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
