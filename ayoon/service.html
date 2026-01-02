@@ -703,7 +703,7 @@ document.addEventListener("keydown", e => {
                 </div>
             </section>
     
-            <!--<< Contact Section Start >>-->
+           <!--<< Contact Section Start >>-->
             <section class="contact-section-one fix">
                 <div class="container">
                     <div class="contact-wrapper">
@@ -713,24 +713,24 @@ document.addEventListener("keydown", e => {
                                     <div class="contact-bg bg-cover" style="background-image: url('assets/img/contact/01.jpg');"></div>
                                     <div class="contact-shape" style="background-image: url(assets/img/contact/bg-shape.png);"></div>
                                     <div class="section-title">
-                                        <span class="text-white wow fadeInUp">Contact us</span>
+                                        <span class="text-white">Contact us</span>
                                         <h2 class="text-white title-anim">Get a Call Back</h2>
                                     </div>
-                                    <form action="#" id="contact-form" method="POST" class="mt-4 mt-md-0">
+                                    <form action="" id="submit-form" method="" class="mt-4 mt-md-0">
                                         <div class="row g-3">
                                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                                 <div class="form-clt">
-                                                    <input type="text" name="name" id="name" placeholder="First Name">
+                                                    <input type="text" name="name" id="name" placeholder="First Name" required >
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                                 <div class="form-clt">
-                                                    <input type="text" name="email" id="email" placeholder="Email Address">
+                                                    <input type="email" name="email" id="email" placeholder="Email Address" required >
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                                                 <div class="form-clt">
-                                                    <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                                                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required >
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
@@ -741,16 +741,19 @@ document.addEventListener("keydown", e => {
                                                        </span>
                                                        <ul class="list">
                                                           <li data-value="1" class="option selected focus">
-                                                             Default sorting
+                                                             Typing Service
                                                        </li>
                                                        <li data-value="1" class="option">
-                                                          Sort by popularity
+                                                             Visa Service
                                                        </li>
                                                        <li data-value="1" class="option">
-                                                          Sort by average rating
+                                                          Translation Services
+                                                       </li>
+                                                        <li data-value="1" class="option">
+                                                          Attestation Services
                                                        </li>
                                                        <li data-value="1" class="option">
-                                                          Sort by latest
+                                                          Other Service
                                                        </li>
                                                     </ul>
                                                     </div>
@@ -771,12 +774,33 @@ document.addEventListener("keydown", e => {
                                             </div>
                                         </div>
                                     </form>
+
+                                    <script>
+          $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbyWeM43bzd0wfOUDw_MQYt-VTCvmde6SbzvNAzIiYtVczU7A9OTgbEeJAYMkNaWsZ8/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+          alert("Our technical team will contact you shortly to assist you further.")
+          window.location.reload()
+          //window.location.href="https://google.com"
+          },
+          error:function (err){
+          alert("Something Error")
+          
+          }
+          })
+          })
+          </script>
+
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6">
                                 <div class="contact-right">
                                     <div class="google-map-box">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6678.7619084840835!2d144.9618311901502!3d-37.81450084255415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b4758afc1d%3A0x3119cc820fdfc62e!2sEnvato!5e0!3m2!1sen!2sbd!4v1641984054261!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.0723180196437!2d54.5348921!3d24.343973400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e475a2ef405c7%3A0x1267d6eec0a3c16!2sAyoon%20Al%20Dhabi%20Typing%20%26%20Business%20Solutions!5e0!3m2!1sen!2sae!4v1766558598847!5m2!1sen!2sae" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
                             </div>
