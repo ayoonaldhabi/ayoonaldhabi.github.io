@@ -37,6 +37,58 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
+
+
+         <script>
+// Disable right-click
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+// Disable text selection
+document.addEventListener("selectstart", e => e.preventDefault());
+
+// Disable copy, cut, paste
+document.addEventListener("copy", e => e.preventDefault());
+document.addEventListener("cut", e => e.preventDefault());
+document.addEventListener("paste", e => e.preventDefault());
+
+// Disable drag & drop (especially for images)
+document.addEventListener("dragstart", e => e.preventDefault());
+
+// Disable specific key combinations
+document.addEventListener("keydown", e => {
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+    }
+    // Ctrl+Shift+I / Ctrl+Shift+J (DevTools)
+    if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+        e.preventDefault();
+    }
+    // Ctrl+U (View Source)
+    if (e.ctrlKey && e.key.toLowerCase() === "u") {
+        e.preventDefault();
+    }
+    // Ctrl+S (Save Page)
+    if (e.ctrlKey && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+    }
+    // Ctrl+C (Copy)
+    if (e.ctrlKey && e.key.toLowerCase() === "c") {
+        e.preventDefault();
+    }
+    // Ctrl+X (Cut)
+    if (e.ctrlKey && e.key.toLowerCase() === "x") {
+        e.preventDefault();
+    }
+    // Ctrl+A (Select All)
+    if (e.ctrlKey && e.key.toLowerCase() === "a") {
+        e.preventDefault();
+    }
+});
+</script>
+
+
+
     </head>
 
     <body>
@@ -452,9 +504,83 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="coaching-box-items mt-0">
+                            <div class="coaching-image">
+                                <img src="assets/img/services/Corporate-Services/Untitleddesign46.webp" alt="img">
+                                <img src="assets/img/services/Corporate-Services/Untitleddesign46.webp" alt="img">
+                                <a href="" class="image-overlay">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                               
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Golden Visa</a></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="coaching-box-items mt-0">
+                            <div class="coaching-image">
+                                <img src="assets/img/services/Corporate-Services/passport-renewal.webp" alt="img">
+                                <img src="assets/img/services/Corporate-Services/passport-renewal.webp" alt="img">
+                                <a href="" class="image-overlay">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                               
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Passport Renewal</a></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="coaching-box-items mt-0">
+                            <div class="coaching-image">
+                                <img src="assets/img/services/Corporate-Services/Untitleddesign43.webp" alt="img">
+                                <img src="assets/img/services/Corporate-Services/Untitleddesign43.webp" alt="img">
+                                <a href="" class="image-overlay">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                               
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Health Insurance</a></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="coaching-box-items mt-0">
+                            <div class="coaching-image">
+                                <img src="assets/img/services/Corporate-Services/work-visa.webp" alt="img">
+                                <img src="assets/img/services/Corporate-Services/work-visa.webp" alt="img">
+                                <a href="" class="image-overlay">
+                                    <i class="fal fa-plus"></i>
+                                </a>
+                               
+                            </div>
+                            <div class="content">
+                                <h4><a href="">Employment Visa</a></h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
+
+        
 
        
 
